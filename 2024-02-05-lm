@@ -1,0 +1,11 @@
+title: 曝苹果Vision Pro遭黑客入侵：设备内核崩溃
+desc: 据媒体报道，在苹果Vision Pro发布后的一天内，有安全研究人员发现了visionOS一个内核漏洞，为潜在的越狱和恶意软件留下后门。
+tag: apple,Vision Pro,
+cve: unknow
+url: https://news.mydrivers.com/1/962/962276.htm
+
+title: 黑客利用易受RCE攻击的Apache RocketMQ服务器
+desc: 研究人员每天会检测到数百个IP地址，这些地址会利用易受CVE-2023-33246、CVE-2023-37582远程命令执行漏洞影响的Apache RocketMQ服务器进行攻击。最初，该安全问题被跟踪为CVE-2023-33246，该漏洞影响着多个组件，包括NameServer、Broker和Controller。Apache发布了针对NameServer组件的不完整修复报告。
+tag: RocketMQ
+cve: CVE-2023-33246、CVE-2023-37582
+url: https://www.bleepingcomputer.com/news/security/hackers-target-apache-rocketmq-servers-vulnerable-to-rce-attacks/
