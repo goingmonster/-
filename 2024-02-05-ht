@@ -1,0 +1,49 @@
+1、Cloudflare内部服务器Atlassian遭到网络攻击
+https://blog.cloudflare.com/thanksgiving-2023-security-incident
+
+Cloudflare披露，其内部 Atlassian 服务器被一名疑似“民族国家攻击者”入侵，该攻击者访问了其 Confluence wiki、Jira 错误数据库和 Bitbucket 源代码管理系统。并使用 ScriptRunner for Jira 建立了对Atlassian 服务器的持久访问，获得了源代码管理系统（使用 Atlassian Bitbucket）的访问权限，并尝试访问有权访问 Atlassian 服务器的控制台服务器，但没有成功。此次攻击行为并未影响 Cloudflare 客户数据或系统，其服务、全球网络系统或配置也不受影响。研究人员对此次攻击的全过程进行了分析。
+
+2、HeadCrab新变种实现无文件化持续攻击Redis服务器
+https://blog.aquasec.com/headcrab-2.0-evolving-threat-in-redis-malware-landscape
+
+研究人员发现 HeadCrab 恶意软件新变种，该恶意软件自 2021 年 9 月初以来一直以全球的 Redis 数据库服务器为目标，并将其编入僵尸网络以非法挖掘加密货币，同时还以允许威胁参与者执行 shell 命令、加载无文件内核模块以及将数据渗漏到远程的方式利用访问权限。研究人员分析了 HeadCrab 2.0 的复杂细节，揭示了其先进的机制，并表示新变种能够以合法命令的名义伪装其恶意活动，这给检测带来了新的问题。与去年相比，受该恶意软件感染的 Redis 服务器数量几乎增加了一倍。
+
+3、新型恶意软件CommandoCat定向攻击暴露的Docker API端点
+https://thehackernews.com/2024/02/exposed-docker-apis-under-attack-in.html
+
+研究人员发现一种名为“Commando Cat”的新型恶意软件活动，其目标是暴露的 Docker API 端点。Commando Cat 是一个加密劫持活动，利用 Docker 作为初始访问向量，并（ab）使用该服务挂载主机的文件系统，然后直接在主机上运行一系列相互依赖的有效负载。 这些负载负责注册持久性、启用后门、泄露各种云服务提供商凭证文件并执行矿工本身，该恶意软件展示的许多规避技术，包括不寻常的进程隐藏机制。 该组织有可能是众多模仿 TeamTNT 工作的组织之一。
+
+4、ALPHV勒索组织声称窃取Technica机构300GB数据并威胁泄露
+https://cyberscoop.com/technica-pentagon-alphv-ransomware/
+
+ALPHV或BlackCat的勒索软件组织声称，已经从Technica窃取300 GB 的关于国防情报和安全局相关的数据。Technica 是一家总部位于弗吉尼亚州的 IT 服务机构，负责进行背景调查和内部威胁分析。ALPHV 勒索组织发布了二十多张据称被盗文件的屏幕截图，其中包含数十人的姓名、社会安全号码、许可级别以及角色和工作地点。这些屏幕截图包括账单发票、从联邦调查局到美国空军等实体的合同，以及与美国政府签订合同的私人实体和设施的相关信息。该组织在与文件一起发布的消息中写道：“如果 Technica 不尽快联系我们，这些数据将被出售或公开。”目前Technica公司没有回复多封寻求置评的电子邮件，也无法通过电话联系到该公司。
+
+5、与印度有关的黑客利用间谍软件进行定向攻击
+https://therecord.media/india-linked-hackers-target-pakistan-with-spyware
+
+研究人员发现疑似印度国家资助的黑客利用爱情骗局来引诱巴基斯坦的受害者安装恶意应用程序，从而用间谍恶意软件感染他们的设备。该组织名为 Patchwork，创建了至少 12 个恶意 Android 应用程序，包括 MeetMe、Let's Chat、Quick Chat 和 Rafaqat，并通过 Google Play 和其他平台分发这些应用程序。据统计这些应用程序被下载了 1,400 多次，目前已被谷歌标记为恶意并删除。一些黑客的受害者位于马来西亚和印度，但研究人员认为这些用户意外下载了这些应用程序，因为 Patchwork 很可能是针对巴基斯坦的用户。
+
+6、DarkGate恶意软件利用Microsoft Teams进行分发
+https://cyware.com/news/darkgate-malware-delivered-via-microsoft-teams-f7b25750
+
+研究人员发现了一次网络钓鱼攻击，该攻击利用 Microsoft Teams 聊天组将 DarkGate 恶意软件推送到受害者的系统上。攻击者使用名为 .onmicrosoft.com 的域发送网络钓鱼消息，诱骗用户下载欺骗性文件。据研究人员称，攻击者利用受感染的域发送了 1000 多个恶意 Teams 群聊邀请。 一旦收件人接受聊天请求，攻击者就会说服他们下载带有欺骗性双扩展名的文件：“Navigating Future Changes October 2023.pdf.msi”。随后将触发恶意软件的下载，研究人员指出，攻击成功是因为用户默认启用了 Microsoft Teams 用户中的外部访问，以便向其他租户中的用户发送消息。
+
+7、AnyDesk证实黑客入侵了其生产服务器并重置了密码
+https://anydesk.com/en/public-statement
+
+AnyDesk证实最近遭受了一次网络攻击黑客访问该公司的生产系统，研究人员获悉，其源代码和私有代码签名密钥在攻击期间被盗。AnyDesk 是一种远程访问解决方案，允许用户通过网络或互联网远程访问计算机，用户企业使用它来提供远程支持或访问托管服务器。AnyDesk 表示他们已吊销与安全相关的证书，并根据需要修复或更换系统。他们还向客户保证 AnyDesk 可以安全使用，并且没有证据表明最终用户设备受到该事件的影响。虽然该公司表示没有身份验证令牌被盗，但出于谨慎考虑，AnyDesk 正在撤销其门户网站的所有密码，并建议在其他网站上使用密码时更改密码。
+
+8、后门激活恶意软件在macOS应用程序中泛滥
+https://www.sentinelone.com/blog/backdoor-activator-malware-running-rife-through-torrents-of-macos-apps/
+
+Activator macOS 后门背后的威胁参与者正在使用盗版应用程序来分发恶意软件，这可能是僵尸网络构建操作。此次活动不同之处在于其庞大的规模和新颖的多级有效负载传输技术。另外值得注意的是，威胁行为者使用破解的 macOS 应用程序，这些应用程序的标题可能是企业用户感兴趣的，因此不限制用户下载内容的组织也可能面临风险。
+
+9、关键漏洞允许攻击者远程接管Mastodon账户
+https://www.theregister.com/2024/02/02/critical_vulnerability_in_mastodon_is/
+
+Mastodon 是免费开源的去中心化社交网络平台，近期修复了一个严重漏洞，该漏洞标记为CVE-2024-23832，在 CVSS v3.1 中的评级为 9.4，影响 3.5.17、4.0.13、4.1.13 和 4.2.5 之前的所有 Mastodon 版本，允许攻击者冒充并接管任何远程帐户。该漏洞已于发布的 4.2.5 版本中得到修复，建议所有 Mastodon 服务器管理员尽快升级到该版本以保护用户。Mastodon 暂时隐瞒了技术细节，以防止主动利用该漏洞，并预计在 2024 年 2 月 15 日分享 有关 CVE-2024-23832 的更多信息。
+
+10、Clorox公司确认2023年因网络攻击造成4900万美元损失
+https://www.bleepingcomputer.com/news/security/clorox-says-cyberattack-caused-49-million-in-expenses/
+
+高乐氏 (Clorox) 披露，到 2023 年底，该公司因网络攻击而产生了 4900 万美元的费用。“产生的成本主要与第三方咨询服务有关，包括 IT 恢复和取证专家以及为调查和补救攻击而产生的其他专业服务，以及因公司业务运营中断而产生的增量运营成本，”虽然 Clorox 没有提供有关此次攻击的更多细节，但据悉此次攻击是由名为Scattered Spider（分散蜘蛛） 的黑客组织实施的 。Scattered Spider 是一个由威胁行为者组成的松散组织，其中许多人讲英语，专门从事社会工程攻击以破坏公司网络。该组织是BlackCat/ALPHV 勒索软件团伙的附属机构，该团伙通常只与讲俄语的威胁行为者合作。
